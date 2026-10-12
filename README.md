@@ -1,40 +1,40 @@
-# Memory Game
+# Browser Games
 
-A responsive and accessible Memory (Concentration) card game built with HTML, CSS, and JavaScript.
+A collection of lightweight, self-contained games made with HTML, CSS, and JavaScript. No build tools, packages, or external assets are required.
 
-## Features
+## Games
 
-- 4x4 and 6x6 grid options
-- Smooth card flip animations
-- Timer and moves counter
-- Star rating system
-- Local storage for best scores
-- Keyboard controls for accessibility
-- Responsive design for all devices
-- No external dependencies
+### Memory Game
 
-## How to Play
+Match pairs of cards on a 4x4 or 6x6 board. The game includes a timer, move counter, star rating, keyboard controls, and saved best scores.
 
-1. Open `memory-game.html` in a web browser
-2. Click or use keyboard (Tab + Enter/Space) to flip cards
-3. Find matching pairs to win
-4. Try to complete the game with as few moves as possible
-5. Switch between 4x4 and 6x6 grids using the buttons
+- Play: [memory-game.html](memory-game.html)
+- Requirements: [PRD_dark_theme.md](PRD_dark_theme.md)
 
-## Technical Details
+### Snake
 
-- Pure HTML, CSS, and JavaScript implementation
-- No external libraries or dependencies
-- Fully responsive design using CSS Grid
-- Accessible with ARIA attributes and keyboard controls
-- Local storage for persistent high scores
+Guide the snake to eat fruit and grow without hitting the walls or itself. Choose a speed, track your score and best score, and pause or restart whenever you like.
 
-## Development
+- Play: [snake-game.html](snake-game.html)
+- Requirements: [PRD_snake_game.md](PRD_snake_game.md)
 
-1. Clone the repository
-2. Open `memory-game.html` in a web browser
-3. Or serve using a local HTTP server:
-   ```bash
-   python3 -m http.server 8000
-   ```
-4. Visit `http://localhost:8000/memory-game.html`
+**Controls:** Arrow keys or WASD to move; Space or P to pause/resume. On mobile, swipe on the board or use the on-screen direction buttons.
+
+## Run a game
+
+Open either HTML file directly in a modern web browser. Alternatively, serve the repository locally:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+- `http://localhost:8000/memory-game.html`
+- `http://localhost:8000/snake-game.html`
+
+## Technology
+
+- Plain HTML, CSS, and JavaScript
+- No external dependencies or network access required
+- Responsive layouts and browser local storage for supported high scores
